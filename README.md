@@ -11,7 +11,9 @@ npm install --save circular-array
 
 ```javascript
 var CircularArray = require('circular-array');
+
 var gizmos = new CircularArray(3);
+
                      // gizmo.array() returns:
 gizmos.push(gizmo1); //   [gizmo1]
 gizmos.push(gizmo2); //   [gizmo1, gizmo2]
