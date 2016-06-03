@@ -4,16 +4,16 @@
  * @param {number} size Maximum number of value to retain.
  */
 function CircularArray (size) {
-  this.index = 0;
-  this.size = size;
-  this.array = new Array(size);
+  this._index = 0;
+  this._size = size;
+  this._array = [];
 }
 
-CircularArray.prototype.incr = function () { this.index = ++this.index % this.size; };
-CircularArray.prototype.array = function () { return this.array(); };
+CircularArray.prototype._incr = function () { this._index = ++this._index % this._size; };
+CircularArray.prototype.array = function () { return this._array; };
 CircularArray.prototype.push = function (value) {
-  this.array[this.index] = value;
-  this.incr();
+  this._array[this._index] = value;
+  this._incr();
 };
 
 module.exports = CircularArray;
