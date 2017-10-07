@@ -1,6 +1,6 @@
 # Circular Array
 
-Simple circular array data structure, for storing a finitely-sized list of values and automatically
+Simple circular array data structure, for storing a finite-length list of values and automatically
 dropping values that no longer fit in the array. All operations are O(1).
 
 ## Usage
