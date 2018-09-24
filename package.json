@@ -7,9 +7,10 @@
   "module": "dist/three-pathfinding.module.js",
   "scripts": {
     "dist": "microbundle --target browser",
-    "version": "npm run dist && npm test && git add -A dist",
+    "preversion": "npm test",
+    "version": "npm run dist && git add -A dist",
     "postversion": "git push && git push --tags && npm publish",
-    "test": "node test.js"
+    "test": "npm run dist && node test.js"
   },
   "repository": {
     "type": "git",
