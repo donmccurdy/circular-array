@@ -16,4 +16,4 @@ CircularArray.prototype.push = function (value) {
   this._incr();
 };
 
-module.exports = CircularArray;
+export { CircularArray };

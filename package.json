@@ -2,9 +2,14 @@
   "name": "circular-array",
   "version": "0.0.1",
   "description": " Simple circular array data structure, for storing a finitely-sized list of values",
-  "main": "index.js",
+  "source": "index.js",
+  "main": "dist/three-pathfinding.js",
+  "module": "dist/three-pathfinding.module.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "microbundle --target browser",
+    "version": "npm run dist && npm test && git add -A dist",
+    "postversion": "git push && git push --tags && npm publish",
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/donmccurdy/circular-array/issues"
   },
-  "homepage": "https://github.com/donmccurdy/circular-array#readme"
+  "homepage": "https://github.com/donmccurdy/circular-array#readme",
+  "devDependencies": {
+    "microbundle": "^0.6.0",
+    "tape": "^4.9.1"
+  }
 }
