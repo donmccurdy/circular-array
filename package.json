@@ -1,6 +1,6 @@
 {
   "name": "circular-array",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": " Simple circular array data structure, for storing a finitely-sized list of values",
   "source": "index.js",
   "main": "dist/circular-array.js",
