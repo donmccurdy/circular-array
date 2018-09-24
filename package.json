@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": " Simple circular array data structure, for storing a finitely-sized list of values",
   "source": "index.js",
-  "main": "dist/three-pathfinding.js",
-  "module": "dist/three-pathfinding.module.js",
+  "main": "dist/circular-array.js",
+  "module": "dist/circular-array.module.js",
   "scripts": {
     "dist": "microbundle --target browser",
     "preversion": "npm test",

@@ -1,2 +1,2 @@
 !function(i,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t(i.circularArray={})}(this,function(i){function t(i){this._index=0,this._size=i,this._array=[]}t.prototype._incr=function(){this._index=++this._index%this._size},t.prototype.array=function(){return this._array},t.prototype.push=function(i){this._array[this._index]=i,this._incr()},i.CircularArray=t});
-//# sourceMappingURL=three-pathfinding.umd.js.map
+//# sourceMappingURL=circular-array.umd.js.map
